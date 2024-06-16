@@ -1,0 +1,17 @@
+a:hover {
+    color: grey;
+}
+
+a:active {
+    color: red;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+    background-color: yellow;
+}
+
+input[type="text"]:active,
+input[type="email"]:active {
+    background-color: green;
+}

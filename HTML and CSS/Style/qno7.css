@@ -1,0 +1,28 @@
+.inline span {
+    background-color: yellow;
+    border: 1px solid black;
+    display: inline;
+    height: 100px;
+    /*wont work in inline*/
+    width: 100px;
+    /*wont work in inline*/
+
+}
+
+.inline-block span {
+    background-color: yellow;
+    border: 1px solid black;
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+}
+
+
+.block span {
+    background-color: yellow;
+    border: 1px solid black;
+    display: block;
+    height: 100px;
+    width: 100px;
+
+}

@@ -1,0 +1,79 @@
+/* universal selector */
+* {
+    background-color: #333333;
+    color: white;
+}
+
+/* element selector */
+header {
+    color: white;
+    text-align: center;
+}
+
+/* element-element seelctor */
+nav ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    padding: 10px 0px;
+}
+
+ul li a {
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+ul li a:hover {
+    color: grey;
+    text-decoration: underline;
+}
+
+/* id selector */
+#content {
+    margin-bottom: 30px;
+}
+
+/* element-group selector */
+div,
+nav,
+ul,
+li {
+    background-color: transparent;
+}
+
+
+
+
+/* class selector */
+.section {
+    padding: 35px;
+    color: black;
+}
+
+#home {
+    background-color: #f9c74f;
+}
+
+.title {
+    color: black;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.content {
+    color: black;
+}
+
+#about {
+    background-color: #e74c3c;
+}
+
+#service {
+    background-color: #2ecc71;
+}
+
+#contact {
+    background-color: #3498db;
+}

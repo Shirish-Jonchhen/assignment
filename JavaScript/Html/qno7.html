@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Qno. 7:</title>
+  </head>
+  <body>
+    <fieldset>
+      <legend>JS FORM VALIDATION</legend>
+      <h1>JS: Form Validation</h1>
+      <form action="">
+        <label for="email">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          oninput="checkforSubmit()"
+        />
+        <p id="email-error" style="color: red"></p>
+        <br />
+        <label for="phno">Phone Number</label>
+        <input type="number" name="phno" id="phno" oninput="checkforSubmit()" />
+        <p id="ph-error"></p>
+        <br />
+        <label for="pw">Password</label>
+        <input type="password" name="pw" id="pw" oninput="checkforSubmit()" />
+        <p id="pw-error"></p>
+        <br />
+
+        <input type="submit" name="submit" id="Submit" disabled />
+      </form>
+    </fieldset>
+
+    <script src="../Script/qno7.js"></script>
+  </body>
+</html>

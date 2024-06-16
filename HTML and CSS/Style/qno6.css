@@ -1,0 +1,27 @@
+.childs p:first-child {
+    color: red;
+    font-size: x-large;
+}
+
+.childs p:nth-child(2) {
+    color: blue;
+    font-weight: bold;
+}
+
+.childs p:nth-child(3) {
+    background-color: wheat;
+}
+
+.childs p:last-child {
+    margin-left: 50px;
+}
+
+.before::before {
+    content: "Before: Added Hi! ";
+    color: blue;
+}
+
+.after::after {
+    content: " After: Added Bye!";
+    color: red;
+}

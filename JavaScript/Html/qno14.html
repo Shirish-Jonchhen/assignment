@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qno. 14:</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        #car {
+            width: 100px;
+            height: 50px;
+            background-color: red;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        #controls {
+            position: fixed;
+            top: 100px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        h1 {
+            text-align: center;
+            position: fixed;
+            top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Write a jQuery program to animate the car (Forward, Stop, Reverse).</h1>
+    <div id="car">
+        <img src="https://pngtree.com/freepng/car-sports-car-transportation_8253017.html" alt="">
+    </div>
+    <div id="controls">
+        <button id="forward">Forward</button>
+        <button id="stop">Stop</button>
+        <button id="reverse">Reverse</button>
+    </div>
+
+    <!-- Include jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Link to external JavaScript file -->
+    <script>
+        $(document).ready(function () {
+            var car = $('#car');
+            var carWidth = car.width();
+            var carContainerWidth = $(window).width();
+
+            $('#forward').click(function () {
+                car.stop().animate({
+                    left: carContainerWidth - carWidth
+                }, 2000);
+            });
+
+            $('#stop').click(function () {
+                car.stop();
+            });
+
+            $('#reverse').click(function () {
+                car.stop().animate({
+                    left: 0
+                }, 2000);
+            });
+        });
+
+    </script>
+</body>
+
+</html>

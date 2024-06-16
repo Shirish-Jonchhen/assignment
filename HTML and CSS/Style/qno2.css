@@ -1,0 +1,12 @@
+body {
+    display: flex;
+}
+
+.content {
+    border-right: 1px solid grey;
+    margin-left: 10px;
+}
+
+.last {
+    border-right: none;
+}

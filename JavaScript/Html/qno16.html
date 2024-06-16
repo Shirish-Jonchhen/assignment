@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qno. 16:</title>
+    <style>
+        #content {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Write a AJAX program to read a file and render it's content asynchronously in
+        a html. (Create your own, either you can send a html file or a anything over a
+        server and process it after you get a status code of OK 200)</h1>
+    <button id="loadFile">Load File</button>
+    <p id="content"></p>
+
+    <!-- Include jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+        async function loadData() {
+            try {
+                const response = await $.ajax({
+                    url: 'data.txt',
+                    type: 'GET',
+                    dataType: 'text'
+                });
+                console.log(response);
+
+                $('#content').html(response);
+            } catch (error) {
+                $('#content').text('Error loading file: ' + error.statusText);
+            }
+        }
+
+        $(document).ready(function () {
+            $('#loadFile').click(function () {
+                loadData();
+            });
+        });
+    </script>
+</body>
+
+</html>

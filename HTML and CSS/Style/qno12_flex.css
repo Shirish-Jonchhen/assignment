@@ -1,0 +1,40 @@
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    gap: 10px;
+}
+
+header,
+footer {
+    border: 1px solid red;
+}
+
+.content {
+    display: flex;
+    flex: 1;
+    gap: 10px;
+}
+
+.sidebar,
+.ads {
+    width: 200px;
+    border: 1px solid red;
+}
+
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.navigation {
+    border: 1px solid red;
+}
+
+.main {
+    flex: 1;
+    border: 1px solid red;
+}

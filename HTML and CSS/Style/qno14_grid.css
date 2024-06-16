@@ -1,0 +1,41 @@
+body {
+    display: grid;
+    grid-template-rows: auto auto 1fr auto auto auto;
+    height: 100vh;
+    margin: 0;
+    gap: 10px;
+}
+
+header,
+.navigation,
+.main,
+.sidebar,
+.ads,
+footer {
+    border: 1px solid red;
+    width: 100%;
+}
+
+header {
+    grid-row: 1;
+}
+
+.navigation {
+    grid-row: 2;
+}
+
+.main {
+    grid-row: 3;
+}
+
+.sidebar {
+    grid-row: 4;
+}
+
+.ads {
+    grid-row: 5;
+}
+
+footer {
+    grid-row: 6;
+}

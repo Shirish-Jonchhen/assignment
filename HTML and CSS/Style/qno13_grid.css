@@ -1,0 +1,46 @@
+body {
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-columns: 200px 1fr 200px;
+    grid-template-areas:
+        "header header"
+        "navigation navigation"
+        "sidebar main"
+        "ads footer";
+    height: 100vh;
+    margin: 0;
+    gap: 10px;
+}
+
+header {
+    grid-area: header;
+    border: 1px solid red;
+    width: 100%;
+}
+
+.navigation {
+    grid-area: navigation;
+    border: 1px solid red;
+    width: 100%;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    border: 1px solid red;
+}
+
+.main {
+    grid-area: main;
+    border: 1px solid red;
+}
+
+.ads {
+    grid-area: ads;
+    border: 1px solid red;
+}
+
+footer {
+    grid-area: footer;
+    border: 1px solid red;
+    width: 100%;
+}

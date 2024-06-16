@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qno. 13:</title>
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+    <h1>Write a jQuery program to toggle the background color. Also toggle the
+        paragraph too when clicked on a toggle button.</h1>
+    <button id="toggleButton">Toggle Paragraph</button>
+    <p id="toggleParagraph">This is a paragraph to be toggled.</p>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var colors = ['#f0f0f0', '#add8e6', '#ffcccb', '#90ee90']; // Array of colors
+            var currentColorIndex = 0;
+
+            $('#toggleButton').click(function () {
+                // Toggle background color
+                currentColorIndex = (currentColorIndex + 1) % colors.length;
+                $('body').css('background-color', colors[currentColorIndex]);
+
+                // Toggle paragraph visibility
+                $('#toggleParagraph').toggle();
+            });
+        });
+    </script>
+</body>
+
+</html>

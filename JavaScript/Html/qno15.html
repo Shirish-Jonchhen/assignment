@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX JSON Example</title>
+    <style>
+        #content {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="loadData">Load Data</button>
+    <div id="content"></div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('#loadData').click(function () {
+                $.ajax({
+                    url: 'data.json',
+                    type: 'GET',
+                    dataType: 'json',
+                    success: function (data) {
+                        var content = '<ul>';
+                        console.log(data);
+                        $.each(data, function (key, value) {
+                            content += '<li>' + key + ': ' + value + '</li>';
+                        });
+                        content += '</ul>';
+                        $('#content').html(content);
+                    },
+                    error: function () {
+                        $('#content').html('An error occurred');
+                    }
+
+                });
+            });
+        });
+
+    </script>
+</body>
+
+</html>

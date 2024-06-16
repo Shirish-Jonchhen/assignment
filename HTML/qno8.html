@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qno. 8: Create the following form as
+        exactly shown in there.</title>
+
+    <style>
+        .highlight {
+            color: blue;
+            font-weight: bold;
+        }
+
+        .info {
+
+            display: flex;
+            justify-content: space-between;
+            width: 25%;
+        }
+    </style>
+</head>
+
+<body>
+    <fieldset>
+        <legend>Survey Form</legend>
+        <form>
+            <!-- contact info -->
+            <h3>Contact Information</h3>
+            <div class='info'>
+                <label for="email" class="highlight">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class='info'>
+                <label for="fname" class="highlight">First Name:</label>
+                <input type="text" id="fname" name="fname" required>
+            </div>
+            <div class='info'>
+                <label for="lname" class="highlight">Last Name:</label>
+                <input type="text" id="lname" name="lname" required>
+            </div>
+
+            <!-- geo information -->
+            <h3>Geographic Information</h3>
+            <div class='info'>
+                <label for="state" class="highlight">State:</label>
+                <input type="text" id="state" name="state" required>
+            </div>
+            <div class='info'>
+                <label for="zip" class="highlight">Zip Code:</label>
+                <input type="text" id="zip" name="zip" required>
+            </div>
+
+            <!-- how did you heat abt us  -->
+            <h3>How did you hear about us?</h3>
+            <input type="checkbox" id="web" name="web" value="web">
+            <label for="web">websearch</label>
+            <br>
+            <input type="checkbox" id="fb" name="fb" value="fb">
+            <label for="fb">facebook</label>
+            <br>
+            <input type="checkbox" id="twt" name="twt" value="twt">
+            <label for="twt">websearch</label>
+            <br>
+            <input type="checkbox" id="email" name="email" value="email">
+            <label for="email">email message</label>
+
+            <!-- Suggenstions  -->
+            <h3>Any Suggestions</h3>
+            <textarea name="suggestions" id="suggestions" cols="30" rows="10"></textarea>
+            <h3>Thank You for taking our survey.</h3>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+
+
+        </form>
+    </fieldset>
+
+</body>
+
+</html>

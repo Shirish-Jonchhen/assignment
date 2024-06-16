@@ -1,0 +1,23 @@
+.margin {
+    border: 1px solid black;
+    width: 250px;
+}
+
+.border {
+
+    margin: 10px;
+    border: 10px solid black;
+}
+
+.padding {
+    padding: 10px;
+    margin: 10px;
+    border: 5px dotted blue;
+}
+
+.content {
+    height: 100px;
+    /* width: 100px; */
+    border: 2px solid red;
+    text-align: center;
+}

@@ -1,0 +1,18 @@
+.content {
+    height: 500px;
+    width: 100%;
+    background-image: url('../resources/ktm-durbar.jpg');
+    background-attachment: scroll;
+}
+
+.bg {
+    margin: 20px 0px;
+    height: 500px;
+    width: 100%;
+    background-color: grey;
+    overflow: hidden;
+    background-image: url('../resources/ktm-durbar.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 100% 50%;
+}

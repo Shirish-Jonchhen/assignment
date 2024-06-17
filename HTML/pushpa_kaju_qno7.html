@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pushpa Kaju HTML Qno. 7: Create the following form. Include
+        placeholder, radio type, pattern for
+        the contact information, set limit
+        for birthday to current day. Provide
+        options and group them according
+        to their category.</title>
+</head>
+
+<body>
+    <fieldset>
+        <legend>Personal Information</legend>
+        <form action="">
+            <label for="fullname" style="color: aqua;">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" placeholder="Yout fullname" required>
+            <br>
+            <label for="current-city">Current City:</label>
+            <input type="text" id="current-city" name="current-city" placeholder="where is your city" required>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+            <br>
+            <label for="phone">phone:</label>
+            <input type="number" id="phone" name="phone" placeholder="9*********" required>
+            <br>
+            <label for="gender">Gender:</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <br>
+            <label for="dob">Birthday:</label>
+            <input type="date" id="dob" name="dob" required>
+            <br>
+            <label for="car">Choose Car Company:</label>
+            <select name="car" id="car">
+                <option value="Jeep">Jeep</option>
+                <option value="BMW">BMW</option>
+                <option value="Toyota">Toyota</option>
+                <option value="Nissan">Nissan</option>
+                <option value="Ford">Ford</option>
+                <option value="Tesla">Tesla</option>
+            </select>
+            <br>
+            <label for="add">Additional Information:</label><br>
+            <textarea name="add" id="add" cols="30" rows="10"></textarea>
+            <br>
+            <input type="checkbox" id="terms" name="terms" required>
+            <label for="terms">I agree to the terms and policy</label>
+            <br>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+    </fieldset>
+
+
+</body>
+
+</html>
